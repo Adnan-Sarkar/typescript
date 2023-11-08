@@ -138,3 +138,19 @@ In JS array, function they all are end of the day objects, but in typescript arr
   Tuple is similar to an array but with fixed number of elements of different data types. So, If you want to an array with 2 size only and want to specify first element will be number and second element will be string then tuple is perfect choice. Because, it won't allow you to put first element of any data type except number same as second elemnt of any data type except string.<br> <br>
 
   `[number, string, boolean]` this is a tuple and it has fixed 3 size with specific element type, If you try to insert value like `[123, 15, true]` typescript won't allow you to do that because of second element is number instead of string. Same as size, you can't put 4th element of it.
+
+### Type inference
+
+Type inference is a feature in TypeScript that allows the compiler to automatically determine the type of a variable or expression based on its usage and assignment
+
+```ts
+let a = "type inference"; // TypeScript infers the type as string
+let b = 5; // TypeScript infers the type as number
+```
+
+It can also determines:
+
+- `Function Return Types`,
+- `Object Literal Types`,
+- `Array Types`,
+- `Union and Intersection Types` and more
