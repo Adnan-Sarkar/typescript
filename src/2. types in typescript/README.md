@@ -154,3 +154,34 @@ It can also determines:
 - `Object Literal Types`,
 - `Array Types`,
 - `Union and Intersection Types` and more
+
+### Type assertion
+
+Type assertion is a concept where you as a developer says typescript that a variable is actually that type and behave like that type.
+
+```ts
+let name: any = "Adnan";
+```
+
+The variable `name` set to the `any` type but assign string value, and typescript still assume that name has any type but name has already string value. In this situation we don't get any type specific suggestion because of `any` type but as a developer we know that name variable type is string now, So we can assert to typescript that to behave name variable as a string type using `as` keyword.
+
+```ts
+let length: number = (name as string).length;
+```
+
+Now, typescript assume name variable as a string and give us string related suggestion, but if actually name isn't carry string then it will cause `Runtime error`.
+
+Type assertion is not type conversion, it's just to avoid type checking. This is useful while using complex type using union and need to specify which type actually it is.
+
+```ts
+const addTotal = (list: Array<number | string>): number => {
+  const sum = list.reduce((sum, current) => {
+    if (typeof current === "number") return (sum as number) + current;
+    else return (sum as number) + 0;
+  }, 0);
+
+  return sum as number;
+};
+```
+
+In this case, typescript assume sum is `number | string` but we assert that it is now number, otherwise return type is number but we return a `number | string` type value which is not allowed.
