@@ -17,12 +17,16 @@ Typescript is an `Object Oriented Programming Language` that is build on top of 
 
 ## Typescript own types
 
-| types     |
-| --------- |
-| union     |
-| interface |
-| void      |
-| array     |
-| tuple     |
-| enum      |
-| union     |
+| types        |
+| ------------ |
+| union        |
+| intersection |
+| unknown      |
+| never        |
+| Generics     |
+| interface    |
+| void         |
+| array        |
+| tuple        |
+| enum         |
+| union        |
