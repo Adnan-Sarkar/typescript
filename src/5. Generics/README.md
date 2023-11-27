@@ -21,3 +21,37 @@ type GeneralArray<T> = Array<T>;
 const nummArr: GeneralArray<number> = [1, 2, 3];
 const strArr: GeneralArray<string> = ["...", "..."];
 ```
+
+Type `tuple` can be shaped as a generic.
+
+```ts
+type GenericTuple1<X, Y> = [X, Y];
+type GenericTuple2<X, Y, Z> = [X, Y, Z];
+
+const hobbies: GenericTuple1<string, string> = ["Playing", "Travelling"];
+```
+
+Generics can be used in `interface`.
+
+```ts
+interface Person<T, X> {
+  name: string;
+  age: number;
+  address: T;
+  education: X;
+}
+```
+
+Generics can be used in `function`.
+
+```ts
+const functionaName = <T>(parameter: T): T[] => {
+  ...
+  ...
+  return [parameter]
+}
+```
+
+generic function used frequently, because we can create a function as a reuseable component for any types.
+
+`Generics` is very important in typescript, first time it takes times to understand how to use and where to use.
