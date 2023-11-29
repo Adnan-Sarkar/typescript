@@ -37,3 +37,21 @@ type Email = Omit<Person, "name" | "age">;
 type NameAge = Omit<Person, "email">;
 // NameAge type is: { name: string; age: number; }
 ```
+
+## 3. Required type
+
+To pick all the properties of a type and make all the properties required.
+
+```ts
+type RequiredInfo = Required<Person>;
+// RequiredInfo type is: { name: string; age: number; email: string; }
+```
+
+## 4. Partial type
+
+Opposite of Required type, where it makes all properties optional.
+
+```ts
+type OptionalInfo = Partial<Person>;
+// OptionalInfo type is: { name?: string; age?: number; email?: string; }
+```
