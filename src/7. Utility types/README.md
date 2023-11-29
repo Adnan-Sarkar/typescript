@@ -55,3 +55,26 @@ Opposite of Required type, where it makes all properties optional.
 type OptionalInfo = Partial<Person>;
 // OptionalInfo type is: { name?: string; age?: number; email?: string; }
 ```
+
+## 5. Readonly type
+
+To makes all properties `readonly`, so we can't change those properties values which have readonly access modifier. So, we only can get the property value.
+
+```ts
+type ReadonlyInfo = Readonly<Person>;
+// ReadonlyInfo type is: {
+//   readonly name: string;
+//   readonly age: number;
+//   readonly email: string;
+// }
+```
+
+## 6. Record type
+
+`Record` is mostly used utility type. Wee can define any object's shape using this type.
+
+```ts
+type MyObj = Record<"string", "string">;
+```
+
+`<"string", "string">` First string is for `key` type of an object and the second string is for the `value`. So, we can define a type of an object where every keys are string type and every key's values are string type.
