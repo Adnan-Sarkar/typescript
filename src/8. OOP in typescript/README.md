@@ -117,3 +117,84 @@ class Student extends Person {
 `super` is a method that actually invoked the parent class constructor for initialize inherited properties.
 
 If parent class constructor does not initialize any properties, then we don't need to call the `super` from the child class constructor.
+
+## Access Modifiers in Class
+
+There are few access modifiers for a property such as: `public`, `private`, `protected` and `readonly`. These access modifiers give us a restriction between accessing properties of a class.
+
+- **public**
+  The public access modifier is used implicitly by default. We can access that public property any time directly.
+
+  ```ts
+  class Student  {
+    public name: string;
+    ...
+    ...
+  }
+
+  const student1: Student = new Student(...);
+
+  // we can access public property name directly
+  console.log(student1.name);
+  ```
+
+- **private**
+
+  The private access modifier is opposite of the public, it can not give us to access private property dirrectly. So, we can't access private property outside of the class.
+
+  ```ts
+  class Student  {
+    private name: string;
+    ...
+    ...
+  }
+
+  const student1: Student = new Student(...);
+
+  // we can't access private property name directly
+  console.log(student1.name); // error
+  ```
+
+- **protected**
+  This access modifier almost similat to the private, but the difference is we can get all the protected property in the child class that we can't get the private properties.
+
+  ```ts
+  class Person  {
+    protected name: string;
+    ...
+    ...
+  }
+
+  class Student extends Person  {
+    ...
+    ...
+  }
+
+
+
+  const student1: Student = new Student(...);
+
+  // we can access protected property name from the child class
+  console.log(student1.name);
+  ```
+
+- **readonly**
+  The readonle access modifier gives us the limitation that we can only read the property's value and can not update the value.
+
+  ```ts
+  class Student  {
+   readonly name: string;
+   ...
+   ...
+  }
+
+  const student1: Student = new Student(...);
+
+  // we can access readonly property name
+  console.log(student1.name);
+
+  // but can't update the value
+  student1.name = "..."; // error
+  ```
+
+Access modifiers are useful in different scenario.
