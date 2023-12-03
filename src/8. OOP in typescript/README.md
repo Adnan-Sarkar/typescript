@@ -198,3 +198,35 @@ There are few access modifiers for a property such as: `public`, `private`, `pro
   ```
 
 Access modifiers are useful in different scenario.
+
+## Type Guard
+
+Sometimes we might get unexpected output for multiple types operation. For example.
+
+```ts
+type NumberOrString = number | string;
+
+const add = (a: NumberOrString, b: NumberOrString): NumberOrString => {
+  return a + b;
+};
+```
+
+In this function, we can give number and string arguments for the parameters `a` and `b`, but it will causes unexpected output.
+
+Now, we can use `typeof` operator to ensure the type and the operation, this is actually type guard. We guard the type for unexpected operations.
+
+- **Type guard using typeof**
+
+  ```ts
+  type NumberOrString = number | string;
+
+  const add = (a: NumberOrString, b: NumberOrString): NumberOrString => {
+    if (typeof a === "number" && typeof b === "number") {
+      return a + b;
+    } else {
+      return a.toString() + b.toString();
+    }
+  };
+  ```
+
+  After using typeof we sure that there is 2 possible way to get the output by `addition` or `concatenation`.
