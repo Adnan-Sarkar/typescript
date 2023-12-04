@@ -1,3 +1,11 @@
+## Table of Contents
+
+- [What is Typescript?](#what-is-typescript)
+- [Why Typescript?](#why-typescript)
+- [Typescript own types](#typescript-own-types)
+
+<br>
+
 ## What is Typescript?
 
 Typescript is an `Object Oriented Programming Language` that is build on top of `Javascript` with extra features. Can say Typescript is superset of javascript. It's name start's with `type` because of the main reason it's give us `type-safety`.
