@@ -1,3 +1,14 @@
+## Table of Contents
+
+- [Types in Typescript](#types-in-typescript)
+- [Basic Data Types](#basic-data-types)
+- [Typescript Own Data Types](#typescript-own-data-types)
+- [Non-Primitive Data Types](#non-primitive-data-types)
+- [Type inference](#type-inference)
+- [Type assertion](#type-assertion)
+
+<br>
+
 ## Types in Typescript
 
 In TypeScript, it's a good practice to assign a type to each variable by adding a colon after the variable name and specifying the type, enhancing code clarity and type safety.
