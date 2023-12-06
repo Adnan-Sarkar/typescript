@@ -1,3 +1,9 @@
+## Table of Contents
+
+- [Interface](#interface)
+
+<br>
+
 # Interface
 
 Interface is similar to the type aliasing, but to create a shape for an object interface is the best choice. So, In typescript, an interface is a way to define a contract for the shape or structure of an object.
