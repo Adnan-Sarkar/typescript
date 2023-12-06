@@ -1,3 +1,9 @@
+## Table of Contents
+
+- [Type Aliases](#type-aliases)
+
+<br>
+
 # Type Aliases
 
 Type aliasing is a most useful tool which reduces redundant type declaration. This is uses for big custom type.
