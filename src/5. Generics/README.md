@@ -1,4 +1,10 @@
-## Generics
+## Table of Contents
+
+- [Generics](#generics)
+
+<br>
+
+# Generics
 
 `Generics` in typescript allow you to create `reusable` and `type-safe` components and functions that can work with different data types without sacrificing type information.
 
