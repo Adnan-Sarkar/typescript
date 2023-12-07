@@ -1,3 +1,15 @@
+## Table of Contents
+
+- [Utility Types In Typescript](#utility-types-in-typescript)
+  - [1. Pick type](#1-pick-type)
+  - [2. Omit type](#2-omit-type)
+  - [3. Required type](#3-required-type)
+  - [4. Partial type](#4-partial-type)
+  - [5. Readonly type](#5-readonly-type)
+  - [6. Record type](#6-record-type)
+
+<br>
+
 # Utility Types In Typescript
 
 ## 1. Pick type
