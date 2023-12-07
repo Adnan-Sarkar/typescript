@@ -1,3 +1,9 @@
+## Table of Contents
+
+- [Constraints in Typescript](#constraints-in-typescript)
+
+<br>
+
 # Constraints in Typescript
 
 Basically constraints is used with generics. Before understand the constraints let's see an example.
