@@ -1,3 +1,13 @@
+## Table of Contents
+
+- [OOP In Typescript](#oop-in-typescript)
+- [Class and Object](#class-and-object)
+- [Inheritance in Typescript](#inheritance-in-typescript)
+- [Access Modifiers in Class](#access-modifiers-in-class)
+- [Type Guard](#type-guard)
+
+<br>
+
 # OOP In Typescript
 
 Typescript supports 4 principles of Object Oriented Programming.
